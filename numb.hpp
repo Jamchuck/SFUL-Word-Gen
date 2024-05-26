@@ -19,12 +19,12 @@ public:
 int mknumb(){
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> distrib(1, 28);
+    std::uniform_int_distribution<> distrib(1, 26);
     int it = distrib(gen);
     return it;
 }
 char inttochar(int d){
-char ls[28] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','È','É'};
+char ls[26] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 return ls[d];
 }
 string mkword(){
